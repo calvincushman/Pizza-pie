@@ -4,20 +4,20 @@ $(document).ready(function() {
   var toppings = 0;
 
   //constructor
-  function Pizza(crust, sauce, topping, size) {
+  function Pizza(size, crust, sauce, topping) {
     this.crust = crust;
     this.sauce = sauce;
     this.size =size;
   }
   $("#pizzaToOrder").click(function(pizza) {
     $("form#sizeSelection").click(function(event) {
-      var size = $("#sizeSelection").val();
+      var pizzSize = $("#sizeSelection").val();
     $("form#crustSelection")
       var crust =$("#crust").val();
 
       var pizza = new Pizza(size);
     })
-    var pizza = new Pizza(size);
+    var pizza = new Pizza(pizzaSize);
     console.log(pizza);
     event.preventDefault();
   });
