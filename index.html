@@ -10,6 +10,7 @@
   <body>
     <div class="container">
       <h1>Mama mia, itsa Mario anda Luigi's pizza pie!</h1>
+
       <h3>Choose a size</h3>
         <select class="form-contol" id="sizeSelection">
           <option value="Tiny">Tiny</option>
@@ -17,6 +18,8 @@
           <option value="Still Pretty Small">Still pretty small tbh</option>
           <option value="Way Too Big">Way too big</option>
         </select>
+
+        <h3>Choose a crust!</h3>
         <div class="radio">
           <label>
             <input type="radio" name="crust" value="tortilla">
@@ -35,6 +38,57 @@
             Extra Crispy
           </label>
         </div>
+
+        <h3>Choose a sauce!</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="sauce" value="red-sauce">
+            Red Sauce
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="sauce" value="soy-sauce">
+            Soy Sauce
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="sauce" value="gravy">
+            Country Gravy
+          </label>
+        </div>
+
+        <h3>Cheese</h3>
+        <form id="cheese">
+          <input type="checkbox" name="cheese" value="mozzarella">Mozzarella
+          <br>
+          <input type="checkbox" name="cheese" value="parmesan">Parmesan
+          <br>
+          <input type="checkbox" name="cheese" value="gouda">Gouda
+          <br>
+          <input type="checkbox" name="cheese" value="Oxaca">Oxaca
+          <br>
+        </form>
+
+        <h3>Choose your toppings!</h3>
+        <form id="toppings">
+          <input type="checkbox" name="toppings" value="peas">Snow Peas
+          <br>
+          <input type="checkbox" name="toppings" value="haggas">Haggas
+          <br>
+          <input type="checkbox" name="toppings" value="avacado">Avacado
+          <br>
+          <input type="checkbox" name="toppings" value="turkey">Turkey
+          <br>
+          <input type="checkbox" name="toppings" value="kimchi">Kimchi
+          <br>
+          <input type="checkbox" name="toppings" value="durian">Durian
+          <br>
+          <input type="checkbox" name="toppings" value="lengua">Lengua
+          <br>
+        </form>
+
       <button id="pizzaToOrder" class="btn btn-success">Place your order</button>
     </div>
   </body>
