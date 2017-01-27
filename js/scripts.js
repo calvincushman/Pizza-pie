@@ -6,7 +6,9 @@ $(document).ready(function() {
   var selectedToppings;
   var toppings = [];
   var cheese = [];
-  //constructor
+  var price;
+
+  //pizza constructor
   function Pizza(size, crust, sauce, toppings) {
     this.size =size;
     this.crust = crust;
@@ -14,6 +16,8 @@ $(document).ready(function() {
     this.toppings = toppings;
     this.cheese = cheese;
   }
+
+  //pizza building process
   $("#pizzaToOrder").click(function(event) {
     size = $("#sizeSelection").val();
     crust = $("input:radio[name=crust]:checked").val();
@@ -29,15 +33,28 @@ $(document).ready(function() {
       cheese.push(selectedCheese);
 
     });
+
     var pizza = new Pizza(size, crust, sauce, cheese, toppings);
     console.log(pizza);
+
+    var toppingPrice = 0;
+    var cheesePrice = 0;
+
+    toppings.forEach(function(topping) {
+    toppingPrice += 1;
+    console.log(toppingPrice);
+    });
+    cheese.forEach(function(cheese) {
+    cheesePrice += 1;
+    console.log(cheesePrice);
+
     event.preventDefault();
+    });
   });
 
+  if (size === tiny) {
+    $()
+  }
+
+
 });
-
-
-
-
-
- //pizza order function
