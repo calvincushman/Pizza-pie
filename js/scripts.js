@@ -52,9 +52,9 @@ $(document).ready(function() {
     });
   });
 
-  if (size === tiny) {
-    $()
-  }
+  //if (size === tiny) {
+    //$()
+  //}
 
 
 });

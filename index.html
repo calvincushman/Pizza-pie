@@ -2,6 +2,7 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -9,87 +10,122 @@
   </head>
   <body>
     <div class="container">
-      <h1>Mama mia, itsa Mario anda Luigi's pizza pie!</h1>
-
-      <h3>Choose a size</h3>
-        <select class="form-contol" id="sizeSelection">
-          <option value="Tiny">Tiny</option>
-          <option value="Extra Small">Extra Small</option>
-          <option value="Still Pretty Small">Still pretty small tbh</option>
-          <option value="Way Too Big">Way too big</option>
-        </select>
-
-        <h3>Choose a crust!</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="crust" value="tortilla">
-            Tortilla
-          </label>
+      <div class="well">
+        <h1>Mama mia, itsa Mario anda Luigi's pizza pie!</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-4" id="everything-else">
+          <h3>Choose a size</h3>
+          <div class="well">
+            <select class="form-contol" id="sizeSelection">
+              <option value="Tiny">Tiny</option>
+              <option value="Extra Small">Extra Small</option>
+              <option value="Still Pretty Small">Still pretty small tbh</option>
+              <option value="Way Too Big">Way too big</option>
+            </select>
+            <h3>Choose a crust!</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="crust" value="tortilla">
+                Tortilla
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="crust" value="french-toast">
+                French Toast
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="crust" value="extra-crispy">
+                Extra Crispy
+              </label>
+            </div>
+            <h3>Choose a sauce!</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="sauce" value="red-sauce">
+                Red Sauce
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="sauce" value="soy-sauce">
+                Soy Sauce
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="sauce" value="gravy">
+                Country Gravy
+              </label>
+            </div>
+            <h3>Cheese</h3>
+            <form id="cheese">
+              <input type="checkbox" name="cheese" value="mozzarella">Mozzarella
+              <br>
+              <input type="checkbox" name="cheese" value="parmesan">Parmesan
+              <br>
+              <input type="checkbox" name="cheese" value="gouda">Gouda
+              <br>
+              <input type="checkbox" name="cheese" value="Oxaca">Oxaca
+              <br>
+            </form>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="crust" value="french-toast">
-            French Toast
-          </label>
+        <div id="pizza">
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="crust" value="extra-crispy">
-            Extra Crispy
-          </label>
+        <div class="col-sm-5" id="toppings">
+          <h3 id="topping-header">Choose your toppings!</h3>
+            <form id="toppings">
+              <div class="row">
+                <div class="col-xs-6" id="toppins1">
+                  <div class="well">
+                    <input type="checkbox" name="toppings" value="peas">Peas
+                    <br>
+                    <input type="checkbox" name="toppings" value="haggas">Haggas
+                    <br>
+                    <input type="checkbox" name="toppings" value="avacado">Avacado
+                    <br>
+                    <input type="checkbox" name="toppings" value="turkey">Turkey
+                    <br>
+                    <input type="checkbox" name="toppings" value="cucumber">Cucumber
+                    <br>
+                    <input type="checkbox" name="toppings" value="roe">Roe
+                    <br>
+                    <input type="checkbox" name="toppings" value="asparagus">Asparagus
+                    <br>
+                    <input type="checkbox" name="toppings" value="chimichuri">Chimichuri
+                    <br>
+                  </div>
+                </div>
+                <div class="col-xs-6" id="toppings2">
+                  <div class="well">
+                    <input type="checkbox" name="toppings" value="brussel-sprouts">Brussel Sprouts
+                    <br>
+                    <input type="checkbox" name="toppings" value="liver">Liver
+                    <br>
+                    <input type="checkbox" name="toppings" value="hummus">Hummus
+                    <br>
+                    <input type="checkbox" name="toppings" value="cat-hair">Cat Hair
+                    <br>
+                    <input type="checkbox" name="toppings" value="kimchi">Kimchi
+                    <br>
+                    <input type="checkbox" name="toppings" value="durian">Durian
+                    <br>
+                    <input type="checkbox" name="toppings" value="lengua">Lengua
+                    <br>
+                    <input type="checkbox" name="toppings" value="oysters">Oysters
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-
-        <h3>Choose a sauce!</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="sauce" value="red-sauce">
-            Red Sauce
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="sauce" value="soy-sauce">
-            Soy Sauce
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="sauce" value="gravy">
-            Country Gravy
-          </label>
-        </div>
-
-        <h3>Cheese</h3>
-        <form id="cheese">
-          <input type="checkbox" name="cheese" value="mozzarella">Mozzarella
-          <br>
-          <input type="checkbox" name="cheese" value="parmesan">Parmesan
-          <br>
-          <input type="checkbox" name="cheese" value="gouda">Gouda
-          <br>
-          <input type="checkbox" name="cheese" value="Oxaca">Oxaca
-          <br>
-        </form>
-
-        <h3>Choose your toppings!</h3>
-        <form id="toppings">
-          <input type="checkbox" name="toppings" value="peas">Snow Peas
-          <br>
-          <input type="checkbox" name="toppings" value="haggas">Haggas
-          <br>
-          <input type="checkbox" name="toppings" value="avacado">Avacado
-          <br>
-          <input type="checkbox" name="toppings" value="turkey">Turkey
-          <br>
-          <input type="checkbox" name="toppings" value="kimchi">Kimchi
-          <br>
-          <input type="checkbox" name="toppings" value="durian">Durian
-          <br>
-          <input type="checkbox" name="toppings" value="lengua">Lengua
-          <br>
-        </form>
-
       <button id="pizzaToOrder" class="btn btn-success">Place your order</button>
+      </div>
     </div>
   </body>
 </html>
