@@ -22,7 +22,7 @@ body {
 }
 
 #topping-header {
-  text-indent: 250px;
+  text-indent: 220px;
 }
 
 #toppings1 {
@@ -32,7 +32,8 @@ body {
 #toppings2 {
 }
 
-#pizza img {
-  width:60px;
-  height:auto;
+#order-output {
+  float: right;
+  height: 180px;
+  width: 500px;
 }

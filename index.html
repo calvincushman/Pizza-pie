@@ -17,7 +17,7 @@
         <div class="col-sm-4" id="everything-else">
           <h3>Choose a size</h3>
           <div class="well">
-            <select class="form-contol" id="sizeSelection">
+            <select class="form-control" id="sizeSelection">
               <option value="Tiny">Tiny</option>
               <option value="Extra Small">Extra Small</option>
               <option value="Still Pretty Small">Still pretty small tbh</option>
@@ -76,7 +76,7 @@
         </div>
         <div id="pizza">
         </div>
-        <div class="col-sm-5" id="toppings">
+        <div class="col-sm-7" id="toppings">
           <h3 id="topping-header">Choose your toppings!</h3>
             <form id="toppings">
               <div class="row">
@@ -124,7 +124,16 @@
             </form>
           </div>
         </div>
-      <button id="pizzaToOrder" class="btn btn-success">Place your order</button>
+      <div class="row">
+        <div class="col-md-2" id="order-button">
+          <button id="pizzaToOrder" class="btn btn-danger">Place your order</button>
+        </div>
+        <div class="col-md-4" id="order-output">
+          <div class="well">
+            <ul>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </body>
