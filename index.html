@@ -18,10 +18,10 @@
           <h3>Choose a size</h3>
           <div class="well">
             <select class="form-control" id="sizeSelection">
-              <option value="Tiny">Tiny</option>
-              <option value="Extra Small">Extra Small</option>
-              <option value="Still Pretty Small">Still pretty small tbh</option>
-              <option value="Way Too Big">Way too big</option>
+              <option value="8">Tiny</option>
+              <option value="10">Extra Small</option>
+              <option value="12">Still pretty small tbh</option>
+              <option value="46">Way too big</option>
             </select>
             <h3>Choose a crust!</h3>
             <div class="radio">
@@ -126,13 +126,11 @@
         </div>
       <div class="row">
         <div class="col-md-2" id="order-button">
-          <button id="pizzaToOrder" class="btn btn-danger">Place your order</button>
+          <button id="add-pizza" class="btn btn-danger">Place your order</button>
         </div>
         <div class="col-md-4" id="order-output">
-          <div class="well">
-            <ul>
-            </ul>
-          </div>
+          <ul id="pizzas-to-order">
+          </ul>
         </div>
       </div>
     </div>
