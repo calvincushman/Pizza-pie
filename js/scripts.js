@@ -12,8 +12,6 @@ function SelectElement(valueToSelect) {
   element.value = valueToSelect;
 };
 
-
-
 $(document).ready(function() {
   $("#add-pizza").click(function(event) {
     var crust;
@@ -31,21 +29,24 @@ $(document).ready(function() {
       toppings.push(selectedTopping);
     });
 
-    var toppingsPrice = parseInt($(toppings.length)val());
+    var toppingsPrice = parseInt(toppings.length);
 
     $("input:checkbox[name=cheese]:checked").each(function() {
       var selectedCheese = $(this).val();
       cheese.push(selectedCheese);
     });
 
-    var cheesePrice = parseInt($(cheese.length).val());
-    var sizePrice = parseInt($(size).val());
+    var cheesePrice = parseInt(cheese.length);
+    var sizePrice = parseInt(size);
+
+    var pizzaPrice = (toppingsPrice+cheesePrice+sizePrice);
 
     var pizza = new Pizza(size, crust, sauce, toppings, cheese);
     console.log(pizza);
     console.log(toppingsPrice);
     console.log(cheesePrice);
     console.log(sizePrice);
+    console.log(pizzaPrice);
     event.preventDefault();
 
   });
