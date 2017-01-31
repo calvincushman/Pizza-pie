@@ -15,15 +15,15 @@
       </div>
       <div class="row">
         <div class="col-sm-4" id="everything-else">
-          <h3>Choose a size</h3>
+          <h1>Choose a size</h1>
           <div class="well">
             <select class="form-control" id="sizeSelection">
-              <option value="8">Tiny</option>
-              <option value="10">Extra Small</option>
-              <option value="12">Still pretty small tbh</option>
+              <option value="3">Tiny</option>
+              <option value="5">Extra Small</option>
+              <option value="8">Still pretty small tbh</option>
               <option value="46">Way too big</option>
             </select>
-            <h3>Choose a crust!</h3>
+            <h2>Choose a crust!</h2>
             <div class="radio">
               <label>
                 <input type="radio" name="crust" value="tortilla">
@@ -42,7 +42,7 @@
                 Extra Crispy
               </label>
             </div>
-            <h3>Choose a sauce!</h3>
+            <h2>Choose a sauce!</h2>
             <div class="radio">
               <label>
                 <input type="radio" name="sauce" value="red-sauce">
@@ -61,7 +61,7 @@
                 Country Gravy
               </label>
             </div>
-            <h3>Cheese</h3>
+            <h2>Cheese</h2>
             <form id="cheese">
               <input type="checkbox" name="cheese" value="mozzarella">Mozzarella
               <br>
@@ -77,7 +77,7 @@
         <div id="pizza">
         </div>
         <div class="col-sm-7" id="toppingsColumn">
-          <h3 id="topping-header">Choose your toppings!</h3>
+          <h2 id="topping-header">Choose your toppings!</h2>
             <form id="toppings">
               <div class="row">
                 <div class="col-xs-6" id="toppings1">
@@ -124,13 +124,21 @@
             </form>
           </div>
         </div>
-      <div class="row">
-        <div class="col-md-2" id="order-button">
-          <button id="add-pizza" class="btn btn-danger">Place your order</button>
-        </div>
-        <div class="col-md-4" id="order-output">
-          <ul id="pizzas-to-order">
-          </ul>
+        <div class="row">
+          <div class="col-md-6">
+            <div id="order-button">
+              <button id="add-pizza" class="btn btn-danger">add a pizza!</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="order-output">
+              <div class="well">
+                <h1>Your pizzas</h1>
+                <ul id="pizzasToOrder">
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

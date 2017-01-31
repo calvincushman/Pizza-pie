@@ -29,24 +29,29 @@ $(document).ready(function() {
       toppings.push(selectedTopping);
     });
 
-    var toppingsPrice = parseInt(toppings.length);
-
     $("input:checkbox[name=cheese]:checked").each(function() {
       var selectedCheese = $(this).val();
       cheese.push(selectedCheese);
     });
 
+    var pizza = new Pizza(size, crust, sauce, toppings, cheese);
+
+    //return pizza
+
+    var toppingsPrice = parseInt(toppings.length);
     var cheesePrice = parseInt(cheese.length);
     var sizePrice = parseInt(size);
 
     var pizzaPrice = (toppingsPrice+cheesePrice+sizePrice);
 
-    var pizza = new Pizza(size, crust, sauce, toppings, cheese);
     console.log(pizza);
     console.log(toppingsPrice);
     console.log(cheesePrice);
     console.log(sizePrice);
     console.log(pizzaPrice);
+
+    $("ul#pizzasToOrder").append("Size: " + size + " inches" + "<br>" + "Crust: " + crust + "<br>" + "Sauce: " + sauce + "<br>" + "Cheese: " + cheese + "<br>" + "Toppings: " + toppings + "<br>" + "Price: $" + pizzaPrice + "<br>" + "<br>");
+
     event.preventDefault();
 
   });

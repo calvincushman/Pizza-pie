@@ -7,11 +7,22 @@ body {
   padding: 30px;
 }
 
+.well {
+  background-color: #f4bf42;
+}
+
  h1 {
    font-family: 'VT323', monospace;
    text-align: center;
  }
 
+h3 {
+  font-family: 'VT323', monospace;
+}
+
+h2 {
+  font-family: 'VT323', monospace;
+}
 #everything-else {
 
 }
@@ -36,4 +47,9 @@ body {
   float: right;
   height: 180px;
   width: 500px;
+}
+
+#pizzasToOrder {
+  font-family: 'VT323', monospace;
+  font-size: 30px;
 }
